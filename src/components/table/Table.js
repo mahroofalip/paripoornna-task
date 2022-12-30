@@ -92,23 +92,16 @@ export default function DataTableDemo({
          
         for (let i = 0; i < data.length; i++) {
             var element = data[i];
-            //  element= element.toString();
-            // console.log(regex,"regexregexregexregexregex");
-            // console.log(element[e.target.name],"////////////////////////");
-            // console.log(e.target.name,"ttttttttttttttttarget name");
-            // console.log(element,"elemeeeeeeeeeeeent");
+          
              if (e.target.name && element[e.target.name].match(regex)) {
                
-                //  console.log(e.target.name,"naaaaaaaaaaaaaaaaaaaaame");
-                //  console.log(e.target.value,"vaaaaaaaaaaaaaaaaaaaaalu");
-                // console.log(element[e.target.name].match(regex));
                 array.push(element)
                  
              }
              setFilteredData(array)
             
         }
-        // console.log(result,"resultresultresult");
+       
        }
 
        if (e.target.value==='') {
