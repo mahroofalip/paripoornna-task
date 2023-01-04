@@ -11,7 +11,6 @@ function Table1() {
   
   useEffect(() => {
     customerService.getCustomersLarge().then((data) => {
-       
       setCustomers(getCustomers(data));
       setLoading(false);
     });
